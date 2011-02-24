@@ -15,4 +15,44 @@ public class DroidActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
     }
+
+    // override Activity callback methods
+    // Reference:
+    // http://developer.android.com/reference/android/app/Activity.html
+	@Override
+	protected void onStart() {
+    	Log.i(appTag, "In onStart()");
+		super.onStart();
+	}
+	
+	@Override
+	protected void onPause() {
+    	Log.i(appTag, "In onPause()");
+		super.onPause();
+	}
+
+	@Override
+	protected void onResume() {
+    	Log.i(appTag, "In onResume()");
+		super.onResume();
+	}
+	
+	@Override
+	protected void onStop() {
+    	Log.i(appTag, "In onStop()");
+		super.onStop();
+	}
+
+	@Override
+	protected void onRestart() {
+    	Log.i(appTag, "In onRestart()");
+		super.onRestart();
+	}
+	
+	@Override
+	protected void onDestroy() {
+    	Log.i(appTag, "In onDestroy()");
+		super.onDestroy();
+	}
+       
 }
