@@ -13,9 +13,10 @@
     
 <!-- android:text="@android:string/ok" -->
 
-<TextView android:text="@string/subTitle"
+<TextView
     android:id="@+id/textView1"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
+    android:text="@string/subTitle"
     />
 </LinearLayout>
