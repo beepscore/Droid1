@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- xml comment, can't be within a tag -->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="fill_parent"
@@ -9,5 +10,12 @@
     android:layout_height="wrap_content" 
     android:text="@string/hello"
     />
-<TextView android:text="@string/subTitle" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+    
+<!-- android:text="@android:string/ok" -->
+
+<TextView android:text="@string/subTitle"
+    android:id="@+id/textView1"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    />
 </LinearLayout>
