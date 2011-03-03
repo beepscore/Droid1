@@ -18,25 +18,24 @@ public class DroidActivity extends Activity {
         setContentView(R.layout.main);
         
 		InputStream myInputStream = getResources().openRawResource(R.raw.my_text);
-		// create a buffered reader
-		BufferedReader r = new BufferedReader(new InputStreamReader(myInputStream));
+		InputStreamReader myInputStreamReader = new InputStreamReader(myInputStream);
+		BufferedReader myBufferedReader = new BufferedReader(myInputStreamReader);
 		
 		// use string builder for efficiency
-		StringBuilder total = new StringBuilder();
+		StringBuilder myStringBuilder = new StringBuilder();
 		
-		String line = "";
+		String aString = "";
 		try {
-			while ((line = r.readLine()) != null)
+			while ((aString = myBufferedReader.readLine()) != null)
 			{ 
-				total.append(line);
+				myStringBuilder.append(aString);
 			}
 		}
 		catch (IOException e)
 		{
 			e.printStackTrace();
-		}
-		
-		Log.v(appTag, total.toString());
+		}		
+		Log.v(appTag, myStringBuilder.toString());
     }
 
     // override Activity callback methods
