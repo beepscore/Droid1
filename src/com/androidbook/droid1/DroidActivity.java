@@ -1,5 +1,7 @@
 package com.androidbook.droid1;
 
+import java.io.InputStream;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.Log;
@@ -14,6 +16,11 @@ public class DroidActivity extends Activity {
     	Log.i(appTag, "In onCreate()");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
+        
+		InputStream myInputFile = getResources().openRawResource(R.raw.my_text);
+		// Next convert myInputFile to a String
+		// now log string
+		//Log.v(appTag, myString);
     }
 
     // override Activity callback methods
