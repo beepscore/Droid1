@@ -2,6 +2,7 @@
 <resources>
     <string name="hello">Hello Dave</string>
     <string name="app_name">Droid #1</string>
+    <string name="app_description">This is my awesomest Android app!</string>
     <string name="subTitle">How ya doin?</string>
     <string name="titleSecond">Hi from DroidActivity2</string>
 </resources>
