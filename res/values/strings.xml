@@ -5,4 +5,5 @@
     <string name="app_description">This is my awesomest Android app!</string>
     <string name="subTitle">How ya doin?</string>
     <string name="titleSecond">Hi from DroidActivity2</string>
+    <string name="titleThird">Hi from DroidActivity3</string>
 </resources>
